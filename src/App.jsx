@@ -5,6 +5,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import RegisterForm from './forms/RegisterForm'
 import ValidateEmail from './ValidateEmail'
+import Hola from './Componet'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/email-validate' element={<ValidateEmail />} />
+        <Route path='/hola' element={<Hola />} />
+        {/* <Route path='/email-validate' element={<ValidateEmail />} /> */}
       </Routes>
     </BrowserRouter>
   )
