@@ -10,11 +10,10 @@ export default function ValidateEmail() {
   const [error, setError] = useState(false);
   useEffect(() => {
     if (token) {
-      axios.post("http://localhost:8000/users/email-validate", { token })
+      axios.post("https://db-ecommerce.onrender.com/users/email-validate", { token })
         .then(res => {
           console.log("entro en el them")
           setData(true)
-        
         })
         .catch(error => {
           console.log(error)
