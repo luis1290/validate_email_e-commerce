@@ -4,7 +4,7 @@ import React from 'react';
 const Hola = () => {
   return (
     <div>
-      <H1>PROBANDO COMPONETE</H1>
+      <h1>PROBANDO COMPONETE</h1>
     </div>
   );
 };
