@@ -11,7 +11,11 @@ export default function ValidateEmail() {
   useEffect(() => {
     if (token) {
       axios.post("http://localhost:8000/users/email-validate", { token })
-        .then(res => setData(true))
+        .then(res => {
+          console.log("entro en el them")
+          setData(true)
+        
+        })
         .catch(error => {
           console.log(error)
           setError(true)
